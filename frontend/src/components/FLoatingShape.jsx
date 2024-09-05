@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-const FLoatingShape = ({ color, size, top, left, delay }) => {
+const FloatingShape = ({ color, size, top, left, delay }) => {
   return (
     <motion.div className={`absolute rounded-full ${color} ${size} opacity-20 blur-xl ${top} ${left}`}
       style={{ top, left }}
@@ -19,4 +19,4 @@ const FLoatingShape = ({ color, size, top, left, delay }) => {
 
   )
 }
-export default FLoatingShape
+export default FloatingShape
