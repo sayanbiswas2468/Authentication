@@ -1,5 +1,4 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import FloatingShape from "./components/FloatingShape";
 
 import SignUpPage from "./pages/SignUpPage";
 import LoginPage from "./pages/LoginPage";
@@ -13,6 +12,7 @@ import LoadingSpinner from "./components/LoadingSpinner";
 import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/authStore";
 import { useEffect } from "react";
+import FloatingShape from "./components/FLoatingShape";
 
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, user } = useAuthStore();
