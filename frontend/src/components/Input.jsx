@@ -10,5 +10,5 @@ const Input = ({ icon: Icon, ...props }) => {
             />
         </div>
     )
-}
+} 
 export default Input
