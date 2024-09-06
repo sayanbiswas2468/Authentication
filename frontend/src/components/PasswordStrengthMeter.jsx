@@ -18,7 +18,7 @@ const PasswordCriteria = ({ password }) => {
                     ) : (
                         <X className='size-4 text-gray-500 mr-2' />
                     )}
-                    <span className={item.met ? "text-green-500" : "text-gray-400"}>{item.label}</span>
+                    <span className={item.met ? "text-lime-500" : "text-gray-400"}>{item.label}</span>
                 </div>
             ))}
         </div>

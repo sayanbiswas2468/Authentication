@@ -33,7 +33,7 @@ const SignUpPage = () => {
 			overflow-hidden'
         >
             <div className='p-8'>
-                <h2 className='text-3xl font-bold mb-6 text-center bg-gradient-to-r from-green-400 to-emerald-500 text-transparent bg-clip-text'>
+                <h2 className='text-3xl font-bold mb-6 text-center bg-gradient-to-r from-white to-white text-transparent bg-clip-text'>
                     Create Account
                 </h2>
 
@@ -51,6 +51,7 @@ const SignUpPage = () => {
                         placeholder='Email Address'
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        className='text-black'
                     />
                     <Input
                         icon={Lock}
@@ -63,9 +64,8 @@ const SignUpPage = () => {
                     <PasswordStrengthMeter password={password} />
 
                     <motion.button
-                        className='mt-5 w-full py-3 px-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white 
-						font-bold rounded-lg shadow-lg hover:from-green-600
-						hover:to-emerald-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2
+                        className='mt-5 w-full py-3 px-4 bg-gradient-to-r from-[#3b82f6]  to-[#1d4ed8] text-white 
+						font-bold rounded-lg shadow-lg hover:from-[#1e293b] hover:to-[#0369a1] focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2
 						 focus:ring-offset-gray-900 transition duration-200'
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
@@ -79,7 +79,7 @@ const SignUpPage = () => {
             <div className='px-8 py-4 bg-gray-900 bg-opacity-50 flex justify-center'>
                 <p className='text-sm text-gray-400'>
                     Already have an account?{" "}
-                    <Link to={"/login"} className='text-green-400 hover:underline'>
+                    <Link to={"/login"} className='text-blue-400 hover:underline'>
                         Login
                     </Link>
                 </p>

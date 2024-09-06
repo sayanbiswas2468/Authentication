@@ -28,7 +28,6 @@ const ProtectedRoute = ({ children }) => {
   return children;
 };
 
-// redirect authenticated users to the home page
 const RedirectAuthenticatedUser = ({ children }) => {
   const { isAuthenticated, user } = useAuthStore();
 
@@ -51,10 +50,10 @@ function App() {
   return (
     <div
       className='min-h-screen bg-gradient-to-br
-    from-gray-900 via-green-900 to-emerald-900 flex items-center justify-center relative overflow-hidden'
+    from-[#2730F2] via-[#27F1F2] to-[#2771F2] flex items-center justify-center relative overflow-hidden'
     >
-      <FloatingShape color='bg-green-500' size='w-64 h-64' top='-5%' left='10%' delay={0} />
-      <FloatingShape color='bg-emerald-500' size='w-48 h-48' top='70%' left='80%' delay={5} />
+      <FloatingShape color='bg-[#701a75]' size='w-64 h-64' top='-5%' left='10%' delay={0} />
+      <FloatingShape color='bg-[#facc15]' size='w-48 h-48' top='70%' left='80%' delay={5} />
       <FloatingShape color='bg-lime-500' size='w-32 h-32' top='40%' left='-10%' delay={2} />
 
       <Routes>
@@ -100,7 +99,6 @@ function App() {
             </RedirectAuthenticatedUser>
           }
         />
-        {/* catch all routes */}
         <Route path='*' element={<Navigate to='/' replace />} />
       </Routes>
       <Toaster />
